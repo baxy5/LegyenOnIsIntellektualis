@@ -11,7 +11,7 @@ const Answer = ({
 
   return (
     <div
-      className={`border-2 w-[450px] text-white border-white rounded-full p-3 flex justify-center items-center hover:bg-white cursor-pointer hover:text-[#133525]
+      className={`border-2 w-[600px] text-white border-white rounded-full p-3 flex justify-center items-center hover:bg-white cursor-pointer hover:text-[#133525]
       ${
         isClicked && isRight ? "bg-green-500" : isClicked ? "bg-orange-500" : ""
       }

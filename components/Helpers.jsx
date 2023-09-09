@@ -15,7 +15,7 @@ const Helpers = ({
   teleDesign
 }) => {
   return (
-    <div className="pt-10 pr-10">
+    <div className="pt-14 pr-10">
       <div className="grid gap-3">
         <div
           onClick={() => {
@@ -63,7 +63,7 @@ const Helpers = ({
           className={`border-2 border-white p-2 text-white rounded-full w-64 flex justify-center items-center cursor-pointer hover:bg-white hover:text-[#133525]
           ${isHalvingBackg ? "bg-red-500 line-through" : ""}`}
         >
-          <p className="text-3xl flex items-center gap-2">
+          <p className="text-3xl flex items-center gap-2 ">
             <span>
               <Image src="/half.png" width={24} height={24} alt="" />
             </span>
