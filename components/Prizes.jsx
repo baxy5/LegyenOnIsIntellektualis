@@ -8,7 +8,7 @@ const Prizes = ({ prizes, prizeIndex, isDoubled }) => {
         return (
           <div
             key={index}
-            className={`p-2 text-white flex justify-center items-center border-2 border-white rounded-full w-64
+            className={`p-2 text-white flex justify-center items-center border-2 border-white rounded-full w-72
             ${prizeIndex == index ? "bg-[#CEB239]" : ""} 
             `}
           >

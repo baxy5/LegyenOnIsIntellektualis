@@ -51,125 +51,349 @@ export default function Home() {
   const questions = [
     {
       1: {
-        question: "Mi a DJB jelentése?",
+        question: "Mi a T.I.B.N jelentése?",
         answers: [
-          "A: Diákjó Bizottság",
-          "B: Demokratikus Jogalapú Barátság",
-          "C: Diák Járulék Bizottság",
-          "D: Diákjóléti Bizottság",
+          "A: Te is dobod nem",
+          "B: Team in beer, no?",
+          "C: Tibi is bedobja, nem?",
+          "D: Te is bedobod, nem?",
         ],
         rightAnswerIndex: 4,
         // rightAnswerIndex - 1 = can't be in the "halving"
         halving: [2, 0],
       },
       2: {
-        question:
-          "Meddig érvényes az őszi félévben kapott diákigazolvány matrica?",
-        answers: [
-          "A: Március 31.",
-          "B: Január 31.",
-          "C: Február 31.",
-          "D: Április 31.",
-        ],
+        question: "Melyik nem magyar sörmárka?",
+        answers: ["A: Heineken", "B: Borsodi", "C: Dreher", "D: Soproni"],
         rightAnswerIndex: 1,
         halving: [1, 2],
       },
       3: {
-        question: "Neumann János melyik évben született?",
-        answers: ["A: 1905", "B: 1915", "C: 1925", "D: 1935"],
+        question: "Melyik megyében található kecskemét?",
+        answers: [
+          "A: Bács-Kiskun",
+          "B: Baranya",
+          "C: Jász-Nagykun-Szolnok",
+          "D: Csongrád-Csanád",
+        ],
         rightAnswerIndex: 1,
         halving: [1, 2],
       },
       4: {
-        question: "Melyik nem magyar sörmárka?",
-        answers: ["A: Soproni", "B: Dreher", "C: Heineken", "D: Borsodi"],
+        question: "Hány féle gyógynövényt tartalmaz a Jager?",
+        answers: ["A: 52", "B: 43", "C: 56", "D: 58"],
         rightAnswerIndex: 3,
         halving: [1, 3],
       },
       5: {
-        question: "A világ legerősebb sörének mekkora az alkohol százaléka?",
-        answers: ["A: 32", "B: 67.5", "C: 67", "D: 55"],
+        question:
+          "Meddig érvényes az őszi félévben kapott diákigazolvány matrica?",
+        answers: [
+          "A: Január 31.",
+          "B: Március 31.",
+          "C: Február 31.",
+          "D: Április 31",
+        ],
         rightAnswerIndex: 2,
         halving: [0, 3],
       },
       6: {
-        question: "Miből készül a fény?",
-        answers: [
-          "A: vodka co2-vel",
-          "B: 2 coulomb töltés",
-          "C: vodka, citromlé",
-          "D: vodka, málnaszörp",
-        ],
+        question: "Hány tanszék van a GAMF-on?",
+        answers: ["A: 3", "B: 4", "C: 3.5", "D: 2"],
         rightAnswerIndex: 1,
         halving: [3, 2],
       },
       7: {
-        question: "Hány neve volt már az egyetemnek a jelenlegivel együtt?",
-        answers: ["A: 3", "B: 6", "C: 2", "D: 5"],
+        question: "Melyik ország autójelzése az S?",
+        answers: ["A: Spanyolország", "B: Svájc", "C: Skócia", "D: Svédország"],
         rightAnswerIndex: 4,
         halving: [1, 0],
       },
     },
     {
       1: {
-        question: "Melyik város az Eiffel-torony otthona?",
-        answers: ["A: Madrid", "B: Berlin", "C: London", "D: Párizs"],
+        question:
+          "Hány forint egy havi kollégium az állami ösztöndíjasok számára?",
+        answers: [
+          "A: 15 999 Ft",
+          "B: 16 500 Ft",
+          "C: 18 000 Ft",
+          "D: 16 000 Ft",
+        ],
         rightAnswerIndex: 4,
         halving: [1, 0],
       },
       2: {
-        question: "Mi a fővárosa Japánnak?",
-        answers: ["A: Peking", "B: Tokió", "C: New York", "D: Bangkok"],
+        question: "Miből áll a hosszúlépés fröccs?",
+        answers: [
+          "A: 2dl bor 1dl szóda",
+          "B: 1dl bor 2dl szóda",
+          "C: 2dl bor 2dl szóda",
+          "D: 3dl bor 2dl szóda",
+        ],
         rightAnswerIndex: 2,
         halving: [3, 0],
       },
       3: {
-        question: "Miből áll a házmester fröccs?",
-        answers: [
-          "A: 5dl bor, 2dl szóda",
-          "B: 3dl bor 2dl szóda",
-          "C: 2dl bor 3dl szóda",
-          "D: 4dl bor 1dl szóda",
-        ],
+        question:
+          "Mikor alapították az egyetem jogelődjét, a Felsőfokú Gépipari Technikumot?",
+        answers: ["A: 1961", "B: 1964", "C: 1972", "D: 2000"],
         rightAnswerIndex: 2,
         halving: [3, 0],
       },
       4: {
-        question: "Ki volt a görög istenek ura?",
-        answers: ["A: Zeusz", "B: Hádész", "C: Poszeidon", "D: Apollón"],
+        question: "Ki Kecskemét hírös szülötte?",
+        answers: [
+          "A: Kodály Zoltán",
+          "B: Erkel Ferenc",
+          "C: Kölcsey Ferenc",
+          "D: Arany János",
+        ],
         rightAnswerIndex: 1,
         halving: [1, 2],
       },
       5: {
-        question: "Mi volt Neumann keresztneve?",
-        answers: ["A: Gusztáv", "B: Gyuri", "C: Sándor", "D: János"],
+        question: "Mi a IJAT jelentése?",
+        answers: [
+          "A: Innovatív Járgányok Aránytalan Áttétele",
+          "B: Innovatív Anyagok és Jármű Tanszék",
+          "C: Innovatív Jármű és Anyag Tanszék",
+          "D: Innovatív Járművek és Anyagok Tanszék",
+        ],
         rightAnswerIndex: 4,
         halving: [1, 0],
       },
       6: {
-        question: "Mi volt a Neumann-hatás?",
-        answers: [
-          "A: A kvantumtúlélés jelensége",
-          "B: A szinkronizáció jelensége",
-          "C: Az egységes tudatosság jelensége",
-          "D: Az árnyékeffektus jelensége",
-        ],
+        question:
+          "Melyik város található legközelebb légvonalban Kecskeméthez?",
+        answers: ["A: Szeged", "B: Paks", "C: Békéscsaba", "D: Budapest"],
         rightAnswerIndex: 2,
         halving: [3, 0],
       },
       7: {
-        question: "Kiről kapta korábban nevét az NJE?",
+        question: "Ki Kecskemét védőszentje?",
         answers: [
-          "A: Janus Pannonius",
-          "B: Pallasz Athéné",
-          "C: Nagy Sándor",
-          "D: Julius Caesar",
+          "A: Szent József",
+          "B: Szent Miklós",
+          "C: Szent István",
+          "D: Szent Mária",
         ],
         rightAnswerIndex: 2,
         halving: [3, 0],
       },
     },
+    {
+      1: {
+        question: "Hány országgal határos Magyarország?",
+        answers: ["A: 6", "B: 8", "C: 9", "D: 7"],
+        rightAnswerIndex: 4,
+        halving: [1, 0],
+      },
+      2: {
+        question: "Melyik kar jelenleg NEM az egyetem része?",
+        answers: [
+          "A: GAMF Műszaki és Informatikai Kar",
+          "B: Pedagógusképző Kar",
+          "C: Gazdaságtudományi Kar",
+          "D: Kertészeti és Vidékfejlesztési Kar",
+        ],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+      3: {
+        question: "Melyik nevet NEM viselte még hivatalosan az egyetemünk?",
+        answers: [
+          "A: Neumann János Egyetem",
+          "B: Kecskeméti Egyetem",
+          "C: Pallasz Aténé Egyetem",
+          "D: Felsőfokú Gépipari Tecnikum",
+        ],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+      4: {
+        question: "Mit jelent az „IPA” rövidítés?",
+        answers: [
+          "A: India Pale Ale",
+          "B: International Pale Ale",
+          "C: Irish Pils Ale",
+          "D: Indian Porter Ale",
+        ],
+        rightAnswerIndex: 1,
+        halving: [1, 2],
+      },
+      5: {
+        question: "Ki írta a Beszélő Köntös című regényt?",
+        answers: [
+          "A: Jókai Mór",
+          "B: Móricz Zsigmond",
+          "C: Kosztolányi Dezső",
+          "D: Mikszáth Kálmán",
+        ],
+        rightAnswerIndex: 4,
+        halving: [1, 0],
+      },
+      6: {
+        question: "Mit jelent a csetresz?",
+        answers: [
+          "A: Zokni",
+          "B: Mosatlan edény",
+          "C: Egy magyar étel",
+          "D: Kutyaól",
+        ],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+      7: {
+        question:
+          "Mely kontinensen volt gyarmata az Osztrák-Magyar Monarchiának?",
+        answers: [
+          "A: Afrika",
+          "B: Ázsia",
+          "C: Dél-Amerika",
+          "D: Észak-Amerika",
+        ],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+    },
+    {
+      1: {
+        question: "Mi a HSZK jelentése?",
+        answers: [
+          "A: Hallgatói Szociális Központ",
+          "B: Hallgatói Szakközpont",
+          "C: Hallgatói Szakkollégium",
+          "D: Hallgatói Szolgáltató Központ",
+        ],
+        rightAnswerIndex: 4,
+        halving: [1, 0],
+      },
+      2: {
+        question: "Hogyan köthető Neumann János neve Kecskeméthez?",
+        answers: [
+          "A: Itt született",
+          "B: Egyetemet neveztek el róla",
+          "C: Itt tanult",
+          "D: Itt találta fel a számítógépet",
+        ],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+      3: {
+        question: "Hogyan készül a Vice Házmester fröccs?",
+        answers: [
+          "A: 3 dl bor 2 dl szóda",
+          "B: 2 dl bor 3 dl szóda",
+          "C: 4 dl bor 1 dl szóda",
+          "D: ezek közül egyik sem",
+        ],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+      4: {
+        question: "Ki a GAMF kar dékánja?",
+        answers: [
+          "A: Dr. Kovács Lóránt",
+          "B: Dr. Tóth Ákos",
+          "C: Dr. Béres Gábor",
+          "D: Dr. Török Erika",
+        ],
+        rightAnswerIndex: 1,
+        halving: [1, 2],
+      },
+      5: {
+        question: "Melyik megyével NEM határos Bács-Kiskun megye?",
+        answers: ["A: Fejér", "B: Tolna", "C: Baranya", "D: Békés "],
+        rightAnswerIndex: 4,
+        halving: [1, 0],
+      },
+      6: {
+        question: "Ki zenésítette meg a Szózatot?",
+        answers: [
+          "A: Vörösmarty Mihály",
+          "B: Egressy Béni",
+          "C: Liszt Ferenc",
+          "D: Erkel Ferenc",
+        ],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+      7: {
+        question: "Miből készül a Moscowe Mule?",
+        answers: [
+          "A: 4cl tequila, 2cl eperlé, 3dl szóda",
+          "B: 4cl vodka, 2cl limelé, 3dl gyömbér sör",
+          "C: 4cl vodka, 2cl citromlé, 3dl sprite",
+          "D: 4cl vodka, fél gerezd citrom, 4dl lager",
+        ],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+    },
+    {
+      1: {
+        question: "Hányadik vágányról indult Harry Potter vonata?",
+        answers: ["A: 1", "B: 11A", "C: 9 és ½", "D: 9 és ¾"],
+        rightAnswerIndex: 4,
+        halving: [1, 0],
+      },
+      2: {
+        question: "Ki nyerte a 2014-es foci VB-t?",
+        answers: [
+          "A: Argentína",
+          "B: Németország",
+          "C: Franciaország",
+          "D: Spanyolország",
+        ],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+      3: {
+        question: "Melyik nem hungarikum ital?",
+        answers: ["A: Unicum", "B: St.Hubertus", "C: Törley", "D: Kőbányai"],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+      4: {
+        question: "Mi a GAMF jelentése?",
+        answers: [
+          "A: Gépipari és automatizálási műszaki főiskola",
+          "B: Gépészeti Műszaki és Alaptudományi Főiskola",
+          "C: Gépgyártó és autóipari műszaki főiskola",
+          "D: Gépészeti és automatizálási műszaki főiskola",
+        ],
+        rightAnswerIndex: 1,
+        halving: [1, 2],
+      },
+      5: {
+        question: "Mit jelent a zákányos?",
+        answers: ["A: Makacs", "B: Szomorú", "C: Vicces", "D: Részeg"],
+        rightAnswerIndex: 4,
+        halving: [1, 0],
+      },
+      6: {
+        question:
+          "Meddig lehet leadni a Rendszeres szociális ösztöndíj kérvényt?",
+        answers: [
+          "A: Szeptember 20",
+          "B: Szeptember 22",
+          "C: Szeptember 30",
+          "D: Szeptember 15",
+        ],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+      7: {
+        question:
+          "Melyik évszázadban említik először Kecskemét nevét a történelemben?",
+        answers: ["A: 15.", "B: 14.", "C: 13.", "D: 16."],
+        rightAnswerIndex: 2,
+        halving: [3, 0],
+      },
+    },
   ];
+  
   const prizes = [
     "2 shot",
     "4 pohár sör",
